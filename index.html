@@ -5,19 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Student Performance Prediction</title>
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </head>
 <body>
+    <header class="p-3 text-bg-dark">
+        <div class="container">
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+              <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+            </a>
+    
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+              <li><a href="#" class="nav-link px-2 text-white fs-4">Student Tester</a></li>
+              
+              
+              
+              
+            </ul>
+    
+            
+    
+            <div class="text-end">
+              
+              <!-- <button type="button" class="btn btn-warning">Take Quiz</button> -->
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img src="asian.jpg" class="d-block mx-lg-auto img-fluid rounded" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+          </div>
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">AI to Predict Your Final ScoreF</h1>
+            <p class="lead">Take a quiz now and check  if you going to pass this year or you need to prepare more ,The results might shock you!</p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+              <a href="#quiz" type="button" class="btn btn-primary btn-lg ">Take Quiz </a>
+            </div>
+          </div>
+        </div>
+      </div> 
+<div>
 
-<div class="container mt-5">
-    <h2 class="mb-4">Student Performance Prediction</h2>
+</div>
+
+
+
+<div class="container my-5 " id="quiz">
+    <div class="mb-4 text-center pb-4">
+        <img src="image.png" width="80" />
+                <h2 class="pt-4" >Let's Predict Your Score</h2>
+                <p class="text-muted">Please fill out the form to get your predicted score</p>
+            </div>
     <form id="predictionForm">
         <!-- Form fields -->
   <!-- Gender -->
-  <div class="form-group row">
-    <label for="gender" class="col-sm-2 col-form-label">Gender:</label>
+  <div class="form-group row m-3">
+    <label for="gender" class="col-sm-2 col-form-label"><span class="text-danger">*</span>Gender:</label>
     <div class="col-sm-10">
-        <select class="form-control" id="gender" name="gender">
+        <select class="form-select" id="gender" name="gender">
             <option value="F">Female</option>
             <option value="M">Male</option>
         </select>
@@ -25,10 +74,10 @@
 </div>
 
 <!-- Nationality -->
-<div class="form-group row">
-    <label for="NationalITy" class="col-sm-2 col-form-label">Nationality:</label>
+<div class="form-group row m-3">
+    <label for="NationalITy" class="col-sm-2 col-form-label"><span class="text-danger">*</span>Nationality:</label>
     <div class="col-sm-10">
-        <select class="form-control" id="NationalITy" name="NationalITy">
+        <select class="form-select" id="NationalITy" name="NationalITy">
             <option value="KW">Kuwait</option>
             <option value="lebanon">Lebanon</option>
             <option value="lebanon">Egypt</option>
@@ -49,10 +98,10 @@
 </div>
 
 <!-- Place of Birth -->
-<div class="form-group row">
-    <label for="PlaceofBirth" class="col-sm-2 col-form-label">Place of Birth:</label>
+<div class="form-group row m-3">
+    <label for="PlaceofBirth" class="col-sm-2 col-form-label"><span class="text-danger">*</span>Place of Birth:</label>
     <div class="col-sm-10">
-        <select class="form-control" id="PlaceofBirth" name="PlaceofBirth">
+        <select class="form-select" id="PlaceofBirth" name="PlaceofBirth">
             <option value="KuwaIT">Kuwait</option>
             <option value="lebanon">Lebanon</option>
             <option value="lebanon">Egypt</option>
@@ -73,10 +122,10 @@
 </div>
 
 <!-- Educational Stage -->
-<div class="form-group row">
-    <label for="StageID" class="col-sm-2 col-form-label">Educational Stage:</label>
+<div class="form-group row m-3">
+    <label for="StageID" class="col-sm-2 col-form-label"><span class="text-danger">*</span>Educational Stage:</label>
     <div class="col-sm-10">
-        <select class="form-control" id="StageID" name="StageID">
+        <select class="form-select" id="StageID" name="StageID">
             <option value="lowerlevel">Lower Level</option>
             <option value="MiddleSchool">Middle School</option>
             <option value="HighSchool">High School</option>
@@ -85,10 +134,10 @@
 </div>
 
 <!-- Grade ID -->
-<div class="form-group row">
-    <label for="GradeID" class="col-sm-2 col-form-label">Grade ID:</label>
+<div class="form-group row m-3">
+    <label for="GradeID" class="col-sm-2 col-form-label"><span class="text-danger">*</span>Grade ID:</label>
     <div class="col-sm-10">
-        <select class="form-control" id="GradeID" name="GradeID">
+        <select class="form-select" id="GradeID" name="GradeID">
             <option value="G-02">G-02</option>
             <option value="G-04">G-04</option>
             <option value="G-05">G-05</option>
@@ -106,10 +155,10 @@
 </div>
 
 <!-- Section ID -->
-<div class="form-group row">
-    <label for="SectionID" class="col-sm-2 col-form-label">Section ID:</label>
+<div class="form-group row m-3">
+    <label for="SectionID" class="col-sm-2 col-form-label"><span class="text-danger">*</span>Section ID:</label>
     <div class="col-sm-10">
-        <select class="form-control" id="SectionID" name="SectionID">
+        <select class="form-select" id="SectionID" name="SectionID">
             <option value="A">A</option>
             <option value="B">B</option>
             <option value="C">C</option>
@@ -118,10 +167,10 @@
 </div>
 
 <!-- Topic -->
-<div class="form-group row">
-    <label for="Topic" class="col-sm-2 col-form-label">Topic:</label>
+<div class="form-group row m-3">
+    <label for="Topic" class="col-sm-2 col-form-label"><span class="text-danger">*</span>Topic:</label>
     <div class="col-sm-10">
-        <select class="form-control" id="Topic" name="Topic">
+        <select class="form-select" id="Topic" name="Topic">
             <option value="IT">IT</option>
             <option value="Math">Math</option>
             <option value="Arabic">Arabic</option>
@@ -140,10 +189,10 @@
 </div>
 
 <!-- Semester -->
-<div class="form-group row">
-    <label for="Semester" class="col-sm-2 col-form-label">Semester:</label>
+<div class="form-group row m-3">
+    <label for="Semester" class="col-sm-2 col-form-label"><span class="text-danger">*</span>Semester:</label>
     <div class="col-sm-10">
-        <select class="form-control" id="Semester" name="Semester">
+        <select class="form-select" id="Semester" name="Semester">
             <option value="F">First</option>
             <option value="S">Second</option>
         </select>
@@ -151,10 +200,10 @@
 </div>
 
 <!-- Relation -->
-<div class="form-group row">
-    <label for="Relation" class="col-sm-2 col-form-label">Relation:</label>
+<div class="form-group row m-3">
+    <label for="Relation" class="col-sm-2 col-form-label"><span class="text-danger">*</span>Guardianship:</label>
     <div class="col-sm-10">
-        <select class="form-control" id="Relation" name="Relation">
+        <select class="form-select" id="Relation" name="Relation">
             <option value="Mum">Mum</option>
             <option value="Father">Father</option>
         </select>
@@ -162,42 +211,51 @@
 </div>
 
 <!-- Raised Hands -->
-<div class="form-group row">
-    <label for="raisedhands" class="col-sm-2 col-form-label">Raised Hands:</label>
-    <div class="col-sm-10">
-        <input type="number" class="form-control" id="raisedhands" name="raisedhands" placeholder="Enter raised hands (0-100)">
-    </div>
+<div class="form-group row m-3">
+    <label for="raisedhands" class="col-sm-2 col-form-label"><span class="text-danger">*</span>Raised Hands:</label>
+    <div class="col-sm-10 align-items-center d-flex gap-2">
+        <input type="range" max="100" min="0" class="form-control-range w-100" id="raisedhands" name="raisedhands" placeholder="Enter raised hands (0-100)"  
+        oninput="updateVisitedResourcesValue(this.value,'VisITedResourcesValues')">
+        <input type="text" class="form-control w-auto" id="VisITedResourcesValues" disabled readonly></div>
 </div>
 
 <!-- Visited Resources -->
-<div class="form-group row">
-    <label for="VisITedResources" class="col-sm-2 col-form-label">Visited Resources:</label>
-    <div class="col-sm-10">
-        <input type="number" class="form-control" id="VisITedResources" name="VisITedResources" placeholder="Enter visited resources (0-100)">
+<div class="form-group row m-3">
+    <label for="VisITedResources" class="col-sm-2 col-form-label"><span class="text-danger">*</span>Visited Resources:</label>
+    <div class="col-sm-10 d-flex align-items-center gap-2">
+        <input type="range" max="100" min="0" class="form-control-range w-100 mr-2" id="VisITedResources" name="VisITedResources" placeholder="Enter visited resources (0-100)"
+         oninput="updateVisitedResourcesValue(this.value,'VisITedResourcesValue')">
+        <input type="text" class="form-control w-auto" id="VisITedResourcesValue" disabled readonly>
     </div>
 </div>
-
+<script>function updateVisitedResourcesValue(value,idinput) {
+    document.getElementById(idinput).value = value;
+}</script>
 <!-- Announcements View -->
-<div class="form-group row">
-    <label for="AnnouncementsView" class="col-sm-2 col-form-label">Announcements View:</label>
-    <div class="col-sm-10">
-        <input type="number" class="form-control" id="AnnouncementsView" name="AnnouncementsView" placeholder="Enter announcements view (0-100)">
+<div class="form-group row m-3">
+    <label for="AnnouncementsView" class="col-sm-2 col-form-label"><span class="text-danger">*</span>Announcements View:</label>
+    <div class="col-sm-10 align-items-center d-flex gap-2">
+        <input type="range" max="100" min="0" class="form-control-range w-100 mr-2" id="AnnouncementsView" name="AnnouncementsView" placeholder="Enter announcements view (0-100)" 
+        oninput="updateVisitedResourcesValue(this.value,'VisIedResourcesValue')">
+        <input type="text" class="form-control w-auto" id="VisIedResourcesValue" disabled readonly>
     </div>
 </div>
 
 <!-- Discussion -->
-<div class="form-group row">
-    <label for="Discussion" class="col-sm-2 col-form-label">Discussion:</label>
-    <div class="col-sm-10">
-        <input type="number" class="form-control" id="Discussion" name="Discussion" placeholder="Enter discussion (0-100)">
+<div class="form-group row m-3">
+    <label for="Discussion" class="col-sm-2 col-form-label"><span class="text-danger">*</span>Discussion:</label>
+    <div class="col-sm-10 align-items-center d-flex gap-2">
+        <input type="range" max="100" min="0" class="form-control-range w-100" id="Discussion" name="Discussion" placeholder="Enter discussion (0-100)" 
+         oninput="updateVisitedResourcesValue(this.value,'VisIedRessourcesValue')">
+        <input type="text" class="form-control w-auto" id="VisIedRessourcesValue" disabled readonly>
     </div>
 </div>
 
 <!-- Parent Answering Survey -->
-<div class="form-group row">
-    <label for="ParentAnsweringSurvey" class="col-sm-2 col-form-label">Parent Answering Survey:</label>
+<div class="form-group row m-3">
+    <label for="ParentAnsweringSurvey" class="col-sm-2 col-form-label"><span class="text-danger">*</span>Parent Answering Survey:</label>
     <div class="col-sm-10">
-        <select class="form-control" id="ParentAnsweringSurvey" name="ParentAnsweringSurvey">
+        <select class="form-select" id="ParentAnsweringSurvey" name="ParentAnsweringSurvey">
             <option value="Yes">Yes</option>
             <option value="No">No</option>
         </select>
@@ -205,10 +263,10 @@
 </div>
 
 <!-- Parent School Satisfaction -->
-<div class="form-group row">
-    <label for="ParentschoolSatisfaction" class="col-sm-2 col-form-label">Parent School Satisfaction:</label>
+<div class="form-group row m-3">
+    <label for="ParentschoolSatisfaction" class="col-sm-2 col-form-label"><span class="text-danger">*</span>Parent School Satisfaction:</label>
     <div class="col-sm-10">
-        <select class="form-control" id="ParentschoolSatisfaction" name="ParentschoolSatisfaction">
+        <select class="form-select" id="ParentschoolSatisfaction" name="ParentschoolSatisfaction">
             <option value="Bad">Bad</option>
             <option value="Good">Good</option>
         </select>
@@ -216,21 +274,36 @@
 </div>
 
 <!-- Student Absence Days -->
-<div class="form-group row">
-    <label for="StudentAbsenceDays" class="col-sm-2 col-form-label">Student Absence Days:</label>
+<div class="form-group row m-3">
+    <label for="StudentAbsenceDays" class="col-sm-2 col-form-label"><span class="text-danger">*</span>Student Absence Days:</label>
     <div class="col-sm-10">
-        <select class="form-control" id="StudentAbsenceDays" name="StudentAbsenceDays">
+        <select class="form-select" id="StudentAbsenceDays" name="StudentAbsenceDays">
             <option value="Above-7">Above 7</option>
             <option value="Under-7">Under 7</option>
         </select>
     </div>
 </div>
 
-        <button type="button" class="btn btn-primary" id="predictButton" disabled><span id="predictButtonInner">Predict</span></button>
+        <button type="button" class="btn btn-primary m-4" id="predictButton" disabled><span id="predictButtonInner">Predict</span></button>
     </form>
 
-    <div class="mt-4 d-flex justify-content-center" id="predictionResult"></div>
+    <div class="mt-4 d-none align-items-start justify-content-center" style="height:700px" id="predictionResult">
+        <div class="d-flex flex-column gap-5 justify-content-center border  p-5 ">
+            <strong id="result" class="fs-4"></strong>
+            <a href="#" onclick="location.reload()" class="btn-lg btn btn-outline-secondary"> Try Again </a>
+        </div>
+    </div>
+
+    <div class="mt-4 d-none align-items-start justify-content-center" style="height:700px" id="predictionSpinner">
+        <div class="spinner-border" role="status">
+            <span class="sr-only"></span>
+          </div>
+    </div>
+
 </div>
+<footer>
+    <p href="#" class=" nd-block m-2 p-2 text-center border-top">All rights Reserved For Younes Makhchan and Anas Errami</p>
+    </footer>
 
 
 
@@ -273,8 +346,9 @@
                 }
             });
             delete formData.undefined;
-
+            
             $("#predictionForm").addClass("d-none");
+            $("#predictionSpinner").removeClass("d-none").addClass("d-flex");
 
             // Send POST request to the API
             $.ajax({
@@ -288,21 +362,23 @@
 
                     var resultText = "";
                     if (response.Class === "H") {
-                        resultText = "The Student Score is High";
+                        resultText = "Your Score is going to be <span class='text-success'>High</span>, Great Job!";
                     } else if (response.Class === "M") {
-                        resultText = "The Student Score is Medium";
+                        resultText = "Your Score is going to be <span class='text-warning'>Medium</span>, Keep it up!";
                     } else {
-                        resultText = "The Student Score is Low";
+                        resultText = "Your Score is going to be <span class='text-danger'>Low<span/>, Be Careful!";
                     }
-
+                    $("#predictionSpinner").addClass("d-none");
+                    $("#predictionResult").removeClass("d-none").addClass("d-flex")
                     // Display prediction result
-                    $("#predictionResult").html("<strong class='h3 mt-5 fw-bold  border p-5 rounded bg-white shadow-md'>" + resultText + "</strong>");
+                    $("#predictionResult #result").html( resultText);
                 },
                 error: function (error) {
                     console.log(error);
                     alert("Error occurred while making the prediction.");
                     // Hide spinner and show form
                     $("#predictionForm").removeClass("d-none");
+                    $("#predictionSpinner").addClass("d-none");
                     $("#predictButtonInner").text("Predict")
 
                 }
