@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Student Performance Prediction</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container mt-5">
+    <h2 class="mb-4">Student Performance Prediction</h2>
+    <form id="predictionForm">
+        <!-- Form fields -->
+  <!-- Gender -->
+  <div class="form-group row">
+    <label for="gender" class="col-sm-2 col-form-label">Gender:</label>
+    <div class="col-sm-10">
+        <select class="form-control" id="gender" name="gender">
+            <option value="F">Female</option>
+            <option value="M">Male</option>
+        </select>
+    </div>
+</div>
+
+<!-- Nationality -->
+<div class="form-group row">
+    <label for="NationalITy" class="col-sm-2 col-form-label">Nationality:</label>
+    <div class="col-sm-10">
+        <select class="form-control" id="NationalITy" name="NationalITy">
+            <option value="KW">Kuwait</option>
+            <option value="lebanon">Lebanon</option>
+            <option value="lebanon">Egypt</option>
+            <option value="lebanon">SaudiArabia</option>
+            <option value="lebanon">USA</option>
+            <option value="lebanon">Jordan</option>
+            <option value="venzuela">venzuela</option>
+            <option value="Iran">iran</option>
+            <option value="Iraq">Iraq</option>
+            <option value="Lybia">Lybia</option>
+            <option value="Palestine">Palestine</option>
+            <option value="Morocco">Morocco</option>
+            <option value="Morocco">Tunis</option>
+
+            <!-- Add more options for other nationalities -->
+        </select>
+    </div>
+</div>
+
+<!-- Place of Birth -->
+<div class="form-group row">
+    <label for="PlaceofBirth" class="col-sm-2 col-form-label">Place of Birth:</label>
+    <div class="col-sm-10">
+        <select class="form-control" id="PlaceofBirth" name="PlaceofBirth">
+            <option value="KuwaIT">Kuwait</option>
+            <option value="lebanon">Lebanon</option>
+            <option value="lebanon">Egypt</option>
+            <option value="lebanon">SaudiArabia</option>
+            <option value="lebanon">USA</option>
+            <option value="lebanon">Jordan</option>
+            <option value="venzuela">venzuela</option>
+            <option value="Iran">iran</option>
+            <option value="Iraq">Iraq</option>
+            <option value="Lybia">Lybia</option>
+            <option value="Palestine">Palestine</option>
+            <option value="Morocco">Morocco</option>
+            <option value="Morocco">Tunis</option>
+
+            <!-- Add more options for other places of birth -->
+        </select>
+    </div>
+</div>
+
+<!-- Educational Stage -->
+<div class="form-group row">
+    <label for="StageID" class="col-sm-2 col-form-label">Educational Stage:</label>
+    <div class="col-sm-10">
+        <select class="form-control" id="StageID" name="StageID">
+            <option value="lowerlevel">Lower Level</option>
+            <option value="MiddleSchool">Middle School</option>
+            <option value="HighSchool">High School</option>
+        </select>
+    </div>
+</div>
+
+<!-- Grade ID -->
+<div class="form-group row">
+    <label for="GradeID" class="col-sm-2 col-form-label">Grade ID:</label>
+    <div class="col-sm-10">
+        <select class="form-control" id="GradeID" name="GradeID">
+            <option value="G-02">G-02</option>
+            <option value="G-04">G-04</option>
+            <option value="G-05">G-05</option>
+            <option value="G-06">G-06</option>
+            <option value="G-07">G-07</option>
+            <option value="G-08">G-08</option>
+            <option value="G-09">G-09</option>
+            <option value="G-10">G-10</option>
+            <option value="G-10">G-11</option>
+            <option value="G-10">G-12</option>
+
+            <!-- Add more options for other grade levels -->
+        </select>
+    </div>
+</div>
+
+<!-- Section ID -->
+<div class="form-group row">
+    <label for="SectionID" class="col-sm-2 col-form-label">Section ID:</label>
+    <div class="col-sm-10">
+        <select class="form-control" id="SectionID" name="SectionID">
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+        </select>
+    </div>
+</div>
+
+<!-- Topic -->
+<div class="form-group row">
+    <label for="Topic" class="col-sm-2 col-form-label">Topic:</label>
+    <div class="col-sm-10">
+        <select class="form-control" id="Topic" name="Topic">
+            <option value="IT">IT</option>
+            <option value="Math">Math</option>
+            <option value="Arabic">Arabic</option>
+            <option value="Science">Science</option>
+            <option value="English">English</option>
+            <option value="Guran">Quran</option>
+            <option value="Guran">History</option>
+            <option value="Frensh">Frensh</option>
+            <option value="Spanish">Spanish</option>
+            <option value="Frensh">Chemistry</option>
+            <option value="Frensh">Geology</option>
+
+            <!-- Add more options for other topics -->
+        </select>
+    </div>
+</div>
+
+<!-- Semester -->
+<div class="form-group row">
+    <label for="Semester" class="col-sm-2 col-form-label">Semester:</label>
+    <div class="col-sm-10">
+        <select class="form-control" id="Semester" name="Semester">
+            <option value="F">First</option>
+            <option value="S">Second</option>
+        </select>
+    </div>
+</div>
+
+<!-- Relation -->
+<div class="form-group row">
+    <label for="Relation" class="col-sm-2 col-form-label">Relation:</label>
+    <div class="col-sm-10">
+        <select class="form-control" id="Relation" name="Relation">
+            <option value="Mum">Mum</option>
+            <option value="Father">Father</option>
+        </select>
+    </div>
+</div>
+
+<!-- Raised Hands -->
+<div class="form-group row">
+    <label for="raisedhands" class="col-sm-2 col-form-label">Raised Hands:</label>
+    <div class="col-sm-10">
+        <input type="number" class="form-control" id="raisedhands" name="raisedhands" placeholder="Enter raised hands (0-100)">
+    </div>
+</div>
+
+<!-- Visited Resources -->
+<div class="form-group row">
+    <label for="VisITedResources" class="col-sm-2 col-form-label">Visited Resources:</label>
+    <div class="col-sm-10">
+        <input type="number" class="form-control" id="VisITedResources" name="VisITedResources" placeholder="Enter visited resources (0-100)">
+    </div>
+</div>
+
+<!-- Announcements View -->
+<div class="form-group row">
+    <label for="AnnouncementsView" class="col-sm-2 col-form-label">Announcements View:</label>
+    <div class="col-sm-10">
+        <input type="number" class="form-control" id="AnnouncementsView" name="AnnouncementsView" placeholder="Enter announcements view (0-100)">
+    </div>
+</div>
+
+<!-- Discussion -->
+<div class="form-group row">
+    <label for="Discussion" class="col-sm-2 col-form-label">Discussion:</label>
+    <div class="col-sm-10">
+        <input type="number" class="form-control" id="Discussion" name="Discussion" placeholder="Enter discussion (0-100)">
+    </div>
+</div>
+
+<!-- Parent Answering Survey -->
+<div class="form-group row">
+    <label for="ParentAnsweringSurvey" class="col-sm-2 col-form-label">Parent Answering Survey:</label>
+    <div class="col-sm-10">
+        <select class="form-control" id="ParentAnsweringSurvey" name="ParentAnsweringSurvey">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+    </div>
+</div>
+
+<!-- Parent School Satisfaction -->
+<div class="form-group row">
+    <label for="ParentschoolSatisfaction" class="col-sm-2 col-form-label">Parent School Satisfaction:</label>
+    <div class="col-sm-10">
+        <select class="form-control" id="ParentschoolSatisfaction" name="ParentschoolSatisfaction">
+            <option value="Bad">Bad</option>
+            <option value="Good">Good</option>
+        </select>
+    </div>
+</div>
+
+<!-- Student Absence Days -->
+<div class="form-group row">
+    <label for="StudentAbsenceDays" class="col-sm-2 col-form-label">Student Absence Days:</label>
+    <div class="col-sm-10">
+        <select class="form-control" id="StudentAbsenceDays" name="StudentAbsenceDays">
+            <option value="Above-7">Above 7</option>
+            <option value="Under-7">Under 7</option>
+        </select>
+    </div>
+</div>
+
+        <button type="button" class="btn btn-primary" id="predictButton" disabled><span id="predictButtonInner">Predict</span></button>
+    </form>
+
+    <div class="mt-4 d-flex justify-content-center" id="predictionResult"></div>
+</div>
+
+
+
+<!-- jQuery and Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        var isFormValid = false;
+
+        // Disable the button initially
+        $("#predictButton").prop("disabled", true);
+
+        // Add event listener to form inputs
+        $("#predictionForm :input").on("input", function () {
+            isFormValid = $("#predictionForm :input").not("#predictButton").filter(function () {
+                return $(this).val().trim() === "";
+            }).length === 0;
+
+            $("#predictButton").prop("disabled", !isFormValid);
+        });
+
+        $("#predictButton").click(function () {
+            $("#predictButtonInner").text("Predicting...")
+            // Collect form data
+            var formData = {};
+            $("#predictionForm :input").each(function () {
+                var inputName = $(this).attr("name");
+                var inputValue = $(this).val();
+
+                // Check if the input value is a number
+                if (!isNaN(inputValue) && inputValue !== "") {
+                    // Parse the value to an integer
+                    formData[inputName] = parseInt(inputValue, 10);
+                } else {
+                    // If it's not a number or an empty string, use the original value
+                    formData[inputName] = inputValue;
+                }
+            });
+            delete formData.undefined;
+
+            $("#predictionForm").addClass("d-none");
+
+            // Send POST request to the API
+            $.ajax({
+                type: "POST",
+                url: "http://127.0.0.1:8000/predict",
+                contentType: "application/json;charset=UTF-8",
+                data: JSON.stringify(formData),
+                success: function (response) {
+                    // Hide spinner
+                
+
+                    var resultText = "";
+                    if (response.Class === "H") {
+                        resultText = "The Student Score is High";
+                    } else if (response.Class === "M") {
+                        resultText = "The Student Score is Medium";
+                    } else {
+                        resultText = "The Student Score is Low";
+                    }
+
+                    // Display prediction result
+                    $("#predictionResult").html("<strong class='h3 mt-5 fw-bold  border p-5 rounded bg-white shadow-md'>" + resultText + "</strong>");
+                },
+                error: function (error) {
+                    console.log(error);
+                    alert("Error occurred while making the prediction.");
+                    // Hide spinner and show form
+                    $("#predictionForm").removeClass("d-none");
+                    $("#predictButtonInner").text("Predict")
+
+                }
+            });
+        });
+    });
+</script>
+
+</body>
+</html>
