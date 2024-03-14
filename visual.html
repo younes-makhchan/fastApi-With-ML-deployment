@@ -1,0 +1,378 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Student Performance Prediction</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+        
+.close {
+  font-size: 1.5rem;
+}
+
+.col-12 img {
+  opacity: 0.7;
+  cursor: pointer;
+  margin: 2rem;
+  width: 100%;
+}
+
+.col-12 img:hover {
+  opacity: 1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+    </style>
+  </head>
+  <body>
+    <header class="p-3 text-bg-dark">
+      <div class="container">
+        <div
+          class="d-flex flex-wrap align-items-center justify-content-around flex-row"
+        >
+          <ul
+            class="nav col-auto me-lg-auto mb-2 justify-content-around mb-md-0"
+          >
+            <li class="col-auto">
+              <a href="#" class="nav-link px-2 text-white fs-4"
+                >Performance Tester</a
+              >
+            </li>
+          </ul>
+          <ul
+            class="d-flex nav col me-lg-auto align-text-end mb-2 justify-content-end mb-md-0"
+          >
+            <li><a href="/" class="nav-link px-2 text-white fs-4">Home</a></li>
+
+            <li>
+              <a href="#mission" class="nav-link px-2 text-white fs-4"
+                >Mission</a
+              >
+            </li>
+            <li>
+              <a href="/visual.html" class="nav-link px-2 text-primary fs-4"
+                >Our Analysis</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="text-end">
+          <!-- <button type="button" class="btn btn-warning">Take Quiz</button> -->
+        </div>
+      </div>
+    </header>
+    <div class="container col-xxl-8 px-4 py-5 vh-100">
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div>
+          <h1
+            class="display-5 fw-bold text-body-emphasis lh-1 mb-3 text-center"
+          >
+            Our Analysis and Models
+          </h1>
+          <p class="lead fs-3 text-center">
+            Insights into our data and Models we used for Project
+          </p>
+
+          <div class="">
+            <div
+              class="row d-flex flex-wrap align-items-center"
+              data-toggle="modal"
+              data-target="#lightbox"
+            >
+              <div class="col-12 col-md-6 col-lg-3">
+                <img
+                  src="/v1.png"
+                  data-target="#indicators"
+                  data-slide-to="0"
+                  alt=""
+                />
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <img
+                  src="/v2.png"
+                  data-target="#indicators"
+                  data-slide-to="1"
+                  alt=""
+                />
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <img
+                  src="/v3.png"
+                  data-target="#indicators"
+                  data-slide-to="2"
+                  alt=""
+                />
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <img
+                  src="/v4.png"
+                  data-target="#indicators"
+                  data-slide-to="3"
+                  alt=""
+                />
+              </div>
+
+            </div>
+
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="lightbox"
+              role="dialog"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <button
+                    type="button"
+                    class="close text-right p-2"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                  <div
+                    id="indicators"
+                    class="carousel slide"
+                    data-interval="false"
+                  >
+                    <ol class="carousel-indicators">
+                      <li
+                        data-target="#indicators"
+                        data-slide-to="0"
+                        class="active"
+                      ></li>
+                      <li data-target="#indicators" data-slide-to="1"></li>
+                      <li data-target="#indicators" data-slide-to="2"></li>
+                      <li data-target="#indicators" data-slide-to="3"></li>
+                      <li data-target="#indicators" data-slide-to="4"></li>
+                      <li data-target="#indicators" data-slide-to="5"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img
+                          class="d-block w-100"
+                          src="/v1.png"
+                          alt="First slide"
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          class="d-block w-100"
+                          src="/v2.png"
+                          alt="Second slide"
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          class="d-block w-100"
+                          src="/v3.png"
+                          alt="Third slide"
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          class="d-block w-100"
+                          src="/v4.png"
+                          alt="Fourth slide"
+                        />
+                      </div>
+                    </div>
+                    <a
+                      class="carousel-control-prev"
+                      href="#indicators"
+                      role="button"
+                      data-slide="prev"
+                    >
+                      <span
+                        class="carousel-control-prev-icon"
+                        aria-hidden="true"
+                      ></span>
+                      <span class="sr-only"></span>
+                    </a>
+                    <a
+                      class="carousel-control-next"
+                      href="#indicators"
+                      role="button"
+                      data-slide="next"
+                    >
+                      <span
+                        class="carousel-control-next-icon"
+                        aria-hidden="true"
+                      ></span>
+                      <span class="sr-only"></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p href="#" class="nd-block m-2 p-2 text-center border-top">
+        All rights Reserved For Younes Makhchan and Anas Errami
+      </p>
+    </footer>
+
+    <!-- jQuery and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        var isFormValid = false;
+
+        // Disable the button initially
+        $("#predictButton").prop("disabled", true);
+
+        // Add event listener to form inputs
+        $("#predictionForm :input").on("input", function () {
+          isFormValid =
+            $("#predictionForm :input")
+              .not("#predictButton")
+              .filter(function () {
+                return $(this).val().trim() === "";
+              }).length === 0;
+
+          $("#predictButton").prop("disabled", !isFormValid);
+        });
+
+        $("#predictButton").click(function () {
+          $("#predictButtonInner").text("Predicting...");
+          // Collect form data
+          var formData = {};
+          $("#predictionForm :input").each(function () {
+            var inputName = $(this).attr("name");
+            var inputValue = $(this).val();
+
+            // Check if the input value is a number
+            if (!isNaN(inputValue) && inputValue !== "") {
+              // Parse the value to an integer
+              formData[inputName] = parseInt(inputValue, 10);
+            } else {
+              // If it's not a number or an empty string, use the original value
+              formData[inputName] = inputValue;
+            }
+          });
+          delete formData.undefined;
+
+          $("#predictionForm").addClass("d-none");
+          $("#predictionSpinner").removeClass("d-none").addClass("d-flex");
+
+          // Send POST request to the API
+          $.ajax({
+            type: "POST",
+            url: "https://fastapi-with-ml-deployment.onrender.com/predict",
+            contentType: "application/json;charset=UTF-8",
+            data: JSON.stringify(formData),
+            success: function (response) {
+              // Hide spinner
+
+              var resultText = "";
+              if (response.Class === "H") {
+                resultText =
+                  "Your Score is going to be <span class='text-success'>High</span>, Great Job!";
+              } else if (response.Class === "M") {
+                resultText =
+                  "Your Score is going to be <span class='text-warning'>Medium</span>, Keep it up!";
+              } else {
+                resultText =
+                  "Your Score is going to be <span class='text-danger'>Low<span/>, Be Careful!";
+              }
+              $("#predictionSpinner").addClass("d-none");
+              $("#predictionResult").removeClass("d-none").addClass("d-flex");
+              // Display prediction result
+              $("#predictionResult #result").html(resultText);
+            },
+            error: function (error) {
+              console.log(error);
+              alert("Error occurred while making the prediction.");
+              // Hide spinner and show form
+              $("#predictionForm").removeClass("d-none");
+              $("#predictionSpinner").addClass("d-none");
+              $("#predictButtonInner").text("Predict");
+            },
+          });
+        });
+      });
+    </script>
+
+    <!-- Code injected by live-server -->
+    <script>
+      // <![CDATA[  <-- For SVG support
+      if ("WebSocket" in window) {
+        (function () {
+          function refreshCSS() {
+            var sheets = [].slice.call(document.getElementsByTagName("link"));
+            var head = document.getElementsByTagName("head")[0];
+            for (var i = 0; i < sheets.length; ++i) {
+              var elem = sheets[i];
+              var parent = elem.parentElement || head;
+              parent.removeChild(elem);
+              var rel = elem.rel;
+              if (
+                (elem.href && typeof rel != "string") ||
+                rel.length == 0 ||
+                rel.toLowerCase() == "stylesheet"
+              ) {
+                var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, "");
+                elem.href =
+                  url +
+                  (url.indexOf("?") >= 0 ? "&" : "?") +
+                  "_cacheOverride=" +
+                  new Date().valueOf();
+              }
+              parent.appendChild(elem);
+            }
+          }
+          var protocol =
+            window.location.protocol === "http:" ? "ws://" : "wss://";
+          var address =
+            protocol + window.location.host + window.location.pathname + "/ws";
+          var socket = new WebSocket(address);
+          socket.onmessage = function (msg) {
+            if (msg.data == "reload") window.location.reload();
+            else if (msg.data == "refreshcss") refreshCSS();
+          };
+          if (
+            sessionStorage &&
+            !sessionStorage.getItem("IsThisFirstTime_Log_From_LiveServer")
+          ) {
+            console.log("Live reload enabled.");
+            sessionStorage.setItem("IsThisFirstTime_Log_From_LiveServer", true);
+          }
+        })();
+      } else {
+        console.error(
+          "Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading."
+        );
+      }
+      // ]]>
+    </script>
+  </body>
+</html>

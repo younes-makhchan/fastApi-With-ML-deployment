@@ -12,29 +12,27 @@
 <body>
     <header class="p-3 text-bg-dark">
         <div class="container">
-          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-            <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-              <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
-            </a>
+            <div class="d-flex flex-wrap align-items-center  justify-content-around flex-row">
+                <ul class="nav col-auto me-lg-auto mb-2 justify-content-around   mb-md-0">
+                  <li class="col-auto"><a href="#" class="nav-link px-2 text-white fs-4">Performance Tester</a></li>
+                 
+                </ul>
+                <ul class="d-flex nav col me-lg-auto align-text-end mb-2 justify-content-end   mb-md-0">
+                    <li><a href="/" class="nav-link px-2 text-primary fs-4">Home</a></li>          
     
-            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-              <li><a href="#" class="nav-link px-2 text-white fs-4">Performance Tester</a></li>
-              
-              
-              
-              
-            </ul>
-    
-            
-    
-            <div class="text-end">
-              
-              <!-- <button type="button" class="btn btn-warning">Take Quiz</button> -->
-            </div>
-          </div>
+                    <li><a href="#mission" class="nav-link px-2 text-white fs-4">Mission</a></li>          
+                    <li><a href="/visual.html" class="nav-link px-2 text-white fs-4">Our Analysis</a></li>          
+                </ul>
+              </div>
+        
+                <div class="text-end">
+                  
+                  <!-- <button type="button" class="btn btn-warning">Take Quiz</button> -->
+                </div>
+              </div>
         </div>
       </header>
-      <div class="container col-xxl-8 px-4 py-5">
+      <div class="container col-xxl-8 px-4 py-5" style="height: 90vh;">
         <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
           <div class="col-10 col-sm-8 col-lg-6">
             <img src="asian.jpg" class="d-block mx-lg-auto img-fluid rounded" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
@@ -50,10 +48,14 @@
           </div>
         </div>
       </div> 
-<div>
+      <div id="mission" style="padding-top: 150px;">
 
-</div>
-
+        <div class="bg-dark   d-flex justify-content-center flex-column align-items-center" style="padding-block: 150px;margin-bottom: 100px;">
+          <h1 style="color: white aliceblue;" class="display-5 fw-bold  lh-1 mb-3 text-center text-white">Mission</h1>
+          <p class="lead fs-3 text-center col-6 text-white">Our Mission is to provide Student  with an early prediction with their score, giving them chance  to act fast before their official result</p>
+      
+        </div>
+    </div>
 
 
 <div class="container my-5 " id="quiz">
@@ -206,7 +208,7 @@
     <label for="Relation" class="col-sm-2 col-form-label"><span class="text-danger">*</span>Guardianship:</label>
     <div class="col-sm-10">
         <select class="form-select" id="Relation" name="Relation">
-            <option value="Mum">Mum</option>
+            <option value="Mum">Mother</option>
             <option value="Father">Father</option>
         </select>
     </div>
